@@ -1,0 +1,18 @@
+Ring algorithm:
+This algorithm is  applied to systems organized as a ring logically or physically.
+In this alg we assume that the link between the process are unidirectional and every process can manage to process to its right only.
+
+DAta structure that this algorithm uses is active list  alist that has priority number of all active process  in the system
+
+
+Berkleys algorithm is a physical clock synchronization algorithm.
+each is node in the system does not have the accurat time.
+as they are geographically spread so each has a different time
+
+
+pass1: time daemon (master node) request timestanps from all the slaves nodes
+pass2: slave node respond their timestamp to master node
+pass3:master node computes fault tolerant average
+pass4:this avg time differrence is addded to the current masters time system and broadcast over the network.
+
+NOw they can commuincate in the synchronous manner.
